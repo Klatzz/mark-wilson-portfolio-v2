@@ -1,0 +1,161 @@
+/* ==========================================================================
+   ANIMATIONS & SYSTEM DIAGRAM VISUALIZATIONS
+   ========================================================================== */
+
+/* Fade-in & Slide-up for Viewport Intersection */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Interactive Hero Architecture Visualizer */
+.hero-diagram-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Data Flow Packets / Flow Signals */
+@keyframes flowDown {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.flow-packet-line {
+  stroke-dasharray: 6 6;
+  animation: flowDown 1.2s linear infinite;
+}
+
+/* System Node Pulse effect */
+.interactive-node {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.interactive-node:hover {
+  transform: scale(1.02);
+}
+
+/* Terminal / Code Glow */
+.glow-cyan {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+.glow-teal {
+  text-shadow: 0 0 12px rgba(45, 212, 191, 0.5);
+}
+
+/* Subtle Hover Accent on Tech Tags */
+.tech-tag-interactive {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-tag-interactive::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  transition: transform 0.6s ease;
+}
+
+.tech-tag-interactive:hover::after {
+  transform: translateX(200%);
+}
+
+/* System Architecture Diagram Card Styling */
+.arch-workflow-box {
+  background: #090e17;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  position: relative;
+}
+
+.arch-workflow-box::before {
+  content: '// SYSTEM ARCHITECTURE & DATA FLOW';
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+/* Interactive SVG Diagram Node Styling */
+.node-box {
+  fill: #111827;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 1.5;
+  transition: all 0.25s ease;
+}
+
+.node-box:hover,
+.node-group:hover .node-box {
+  fill: #172338;
+  stroke: var(--accent-cyan);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.3));
+}
+
+.node-box.accent-node {
+  stroke: rgba(56, 189, 248, 0.4);
+}
+
+.node-box.hardware-node {
+  stroke: rgba(45, 212, 191, 0.4);
+}
+
+.node-box.hardware-node:hover,
+.node-group:hover .node-box.hardware-node {
+  stroke: var(--accent-teal);
+  filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.3));
+}
+
+.node-text-title {
+  fill: #f1f5f9;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.node-text-sub {
+  fill: #94a3b8;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.flow-path {
+  fill: none;
+  stroke: rgba(56, 189, 248, 0.3);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+  animation: flowDown 1.5s linear infinite;
+}
+
+.flow-path-hardware {
+  fill: none;
+  stroke: rgba(45, 212, 191, 0.3);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+  animation: flowDown 1.5s linear infinite;
+}

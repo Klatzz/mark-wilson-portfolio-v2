@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Wilson De Torres | BS Information Systems & Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mark Wilson De Torres — 4th Year BS Information Systems student at Calayan Educational Foundation Inc. Hands-on experience in Web Development, Database Management, Workflow Automation (n8n), System Integration, and RFID Hardware.">
+  <meta name="author" content="Mark Wilson De Torres">
+  <meta name="keywords" content="Mark Wilson De Torres, Information Systems, Web Developer, n8n Automation, MySQL, PHP, Systems Integration, RFID, Portfolio, OJT, NASC Technologies">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mark Wilson De Torres | BS Information Systems & Systems Developer">
+  <meta property="og:description" content="Practical information systems connecting web applications, databases, n8n automation workflows, external platforms, and RFID hardware.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Mark Wilson De Torres Home">
+        <div class="brand-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span>MWD<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Featured Projects</a>
+        <a href="#skills" class="nav-link">Technical Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#why-me" class="nav-link">Why Work With Me</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="status-pill" title="Currently seeking OJT/Internship opportunities">
+          <span class="status-dot"></span>
+          <span>Available for OJT</span>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Open Navigation Menu" id="mobileMenuBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="brand-logo">
+        <div class="brand-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span>MWD<span class="brand-dot">.</span></span>
+      </span>
+      <button class="mobile-nav-close" aria-label="Close Navigation Menu" style="background:none;border:none;color:var(--text-secondary);cursor:pointer;font-size:1.5rem;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link">01. About Me</a>
+      <a href="#projects" class="mobile-nav-link">02. Featured Projects</a>
+      <a href="#skills" class="mobile-nav-link">03. Technical Skills</a>
+      <a href="#education" class="mobile-nav-link">04. Education</a>
+      <a href="#why-me" class="mobile-nav-link">05. Why Work With Me</a>
+      <a href="#contact" class="mobile-nav-link">06. Contact</a>
+    </div>
+    <div style="margin-top:auto; padding-top:20px; border-top:1px solid var(--border-subtle);">
+      <a href="https://www.linkedin.com/in/mark-wilson-de-torres-4ab278431" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width:100%;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        <span>LinkedIn Profile</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge-row">
+            <span class="section-tag">Information Systems & Developer</span>
+            <span class="academic-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Consistent Dean's Lister
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Mark Wilson
+            <span class="hero-title-accent">De Torres</span>
+          </h1>
+
+          <p class="hero-subheadline">
+            BS Information Systems Student | Web Development | Automation | Systems Integration
+          </p>
+
+          <p class="hero-intro">
+            I build practical information systems that connect web applications, databases, automation workflows, and external platforms.
+          </p>
+
+          <p class="hero-description">
+            Fourth-year BS Information Systems student and consistent Dean's Lister with hands-on experience in web development, database management, workflow automation, and system integration.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mark-wilson-de-torres-4ab278431" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="Visit LinkedIn Profile">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-bar">
+            <div class="stat-item">
+              <span class="stat-label">Institution</span>
+              <span class="stat-value">Calayan Educational Foundation</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Academic Status</span>
+              <span class="stat-value">4th Year BSIS (Grad 2027)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Location</span>
+              <span class="stat-value">Lucena City, Quezon, PH</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Architecture Visual Representation -->
+        <div class="hero-visual reveal delay-2">
+          <div class="architecture-card">
+            <div class="arch-header">
+              <div class="arch-title-group">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--accent-cyan)">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span class="arch-title">System Architecture Flow</span>
+              </div>
+              <div class="arch-live-indicator">
+                <span class="pulse-dot"></span>
+                <span>Active Pipeline</span>
+              </div>
+            </div>
+
+            <!-- Architecture Nodes -->
+            <div class="arch-diagram">
+              <div class="arch-node-item">
+                <div class="arch-node-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div class="arch-node-info">
+                  <div class="arch-node-name">Web Application</div>
+                  <div class="arch-node-role">Frontend UI & Backend Logic</div>
+                </div>
+                <span class="arch-node-tech">HTML/CSS/JS/PHP</span>
+              </div>
+
+              <div class="arch-connector">
+                <div class="arch-connector-line"></div>
+              </div>
+
+              <div class="arch-node-item">
+                <div class="arch-node-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <div class="arch-node-info">
+                  <div class="arch-node-name">Database Layer</div>
+                  <div class="arch-node-role">Relational Schema & Persistence</div>
+                </div>
+                <span class="arch-node-tech">SQL / MySQL</span>
+              </div>
+
+              <div class="arch-connector">
+                <div class="arch-connector-line"></div>
+              </div>
+
+              <div class="arch-node-item">
+                <div class="arch-node-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                </div>
+                <div class="arch-node-info">
+                  <div class="arch-node-name">Automation Engine</div>
+                  <div class="arch-node-role">Webhooks & Event Logic</div>
+                </div>
+                <span class="arch-node-tech">n8n / Webhooks</span>
+              </div>
+
+              <div class="arch-connector">
+                <div class="arch-connector-line"></div>
+              </div>
+
+              <div class="arch-node-item">
+                <div class="arch-node-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div class="arch-node-info">
+                  <div class="arch-node-name">External Platform</div>
+                  <div class="arch-node-role">Social Channels & Hardware</div>
+                </div>
+                <span class="arch-node-tech">FB / IG / RFID</span>
+              </div>
+            </div>
+
+            <div class="arch-footer-note">
+              <span>Workflow Data Flow Architecture</span>
+              <span class="mono" style="color:var(--accent-cyan);">&lt;connected/&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Profile & Background</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A focused look into my academic journey, passion for information systems, and practical implementation philosophy.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-card reveal">
+          <p class="lead">
+            I am a fourth-year Bachelor of Science in Information Systems student at Calayan Educational Foundation Inc. with a strong interest in web development, automation, database systems, and information system integration.
+          </p>
+          <p>
+            Through academic and capstone projects, I have gained practical experience building systems that combine web technologies, databases, automation workflows, APIs, social media platforms, and hardware components.
+          </p>
+          <p>
+            I enjoy solving practical problems through technology and turning manual processes into structured and automated workflows.
+          </p>
+
+          <div class="about-highlight-box">
+            <span class="mono" style="color:var(--accent-cyan); font-weight:600; display:block; margin-bottom:4px;">// CORE PHILOSOPHY</span>
+            Bridging disconnected systems by designing practical backend logic, automated data pipelines, and responsive web user interfaces.
+          </div>
+        </div>
+
+        <div class="about-side-stack">
+          <!-- Currently Card -->
+          <div class="currently-card reveal delay-1">
+            <div class="currently-header">
+              <span class="card-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Currently
+              </span>
+              <span class="status-pill" style="padding: 2px 10px; font-size: 0.75rem;">Status</span>
+            </div>
+            <ul class="currently-list">
+              <li class="currently-item">
+                <svg class="currently-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>4th Year</strong> BS Information Systems</span>
+              </li>
+              <li class="currently-item">
+                <svg class="currently-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Expected Graduation: <strong>2027</strong></span>
+              </li>
+              <li class="currently-item">
+                <svg class="currently-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Consistent Dean's Lister</strong></span>
+              </li>
+              <li class="currently-item">
+                <svg class="currently-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Seeking OJT / internship opportunity</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Education Card -->
+          <div class="education-card reveal delay-2">
+            <div class="edu-institution">Calayan Educational Foundation Inc.</div>
+            <div class="edu-degree">Bachelor of Science in Information Systems</div>
+            <div class="edu-meta-row">
+              <span class="edu-tag">4th Year</span>
+              <span class="edu-tag">Class of 2027</span>
+              <span class="edu-tag honor">★ Dean's Lister</span>
+            </div>
+            <div class="edu-coursework">
+              <div class="edu-coursework-title">Relevant Coursework</div>
+              <div class="course-tags">
+                <span class="tech-badge">Database Management</span>
+                <span class="tech-badge">Systems Analysis & Design</span>
+                <span class="tech-badge">Web Development</span>
+                <span class="tech-badge">Programming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED PROJECTS SECTION (Clean, Minimal, Visually Dominant)
+       ========================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Selected Systems</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world systems, capstone research, and automated pipelines connecting databases, workflows, social platforms, and hardware.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ==========================================
+             PROJECT 01: CAPSTONE THRIFT STORE SYSTEM
+             ========================================== -->
+        <article class="project-card reveal" data-open-project="project1">
+          <!-- Large Project Screenshot (65-75% visual focus) -->
+          <div class="project-card-media" title="View Project Details & Screenshots">
+            <img src="images/projects/daring-darling/dashboard.png" alt="Automated Transaction Processing System Dashboard" class="project-card-img" loading="eager">
+            <div class="project-card-overlay">
+              <div class="overlay-view-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimal Card Body -->
+          <div class="project-card-content">
+            <span class="project-category-tag">CURRENT CAPSTONE</span>
+            <h3 class="project-card-title">Automated Transaction Processing System for an Online Thrift Store</h3>
+            <p class="project-card-desc">
+              Automating customer transactions, inventory checking, and order processing through social media.
+            </p>
+
+            <div class="project-card-badges">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge accent">n8n</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Ngrok</span>
+              <span class="tech-badge accent">AI Agents</span>
+            </div>
+
+            <div class="project-card-action">
+              <span class="view-project-link">
+                <span>View Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==========================================
+             PROJECT 02: FACILITY RESERVATION SYSTEM
+             ========================================== -->
+        <article class="project-card reveal delay-1" data-open-project="project2">
+          <!-- Large Project Screenshot -->
+          <div class="project-card-media" title="View Project Details & Screenshots">
+            <img src="images/projects/facility-reservation/dashboard.png" alt="Automated Online Facility Reservation Dashboard" class="project-card-img" loading="eager">
+            <div class="project-card-overlay">
+              <div class="overlay-view-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimal Card Body -->
+          <div class="project-card-content">
+            <span class="project-category-tag">INFORMATION SYSTEM</span>
+            <h3 class="project-card-title">Automated Online Facility Reservation through Facebook Messenger</h3>
+            <p class="project-card-desc">
+              An automated facility reservation system integrating Facebook Messenger, n8n workflows, and database processing.
+            </p>
+
+            <div class="project-card-badges">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge accent">n8n</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Ngrok</span>
+            </div>
+
+            <div class="project-card-action">
+              <span class="view-project-link">
+                <span>View Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==========================================
+             PROJECT 03: GYM MANAGEMENT (RFID HARDWARE)
+             ========================================== -->
+        <article class="project-card reveal delay-2" data-open-project="project3">
+          <!-- Large Project Screenshot -->
+          <div class="project-card-media" title="View Project Details & Screenshots">
+            <img src="images/projects/gym-management/dashboard.png" alt="Gym Management System Dashboard" class="project-card-img" loading="eager">
+            <div class="project-card-overlay">
+              <div class="overlay-view-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimal Card Body -->
+          <div class="project-card-content">
+            <span class="project-category-tag" style="color:var(--accent-teal);">INFORMATION SYSTEM + HARDWARE</span>
+            <h3 class="project-card-title">Gym Management System</h3>
+            <p class="project-card-desc">
+              A gym management system with RFID-based member identification and attendance tracking.
+            </p>
+
+            <div class="project-card-badges">
+              <span class="tech-badge" style="color:var(--accent-teal); border-color:rgba(45,212,191,0.3); background:rgba(45,212,191,0.08);">RFID</span>
+              <span class="tech-badge">Database</span>
+              <span class="tech-badge">Web Application</span>
+            </div>
+
+            <div class="project-card-action">
+              <span class="view-project-link" style="color:var(--accent-teal);">
+                <span>View Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECHNICAL SKILLS SECTION
+       ========================================================================== -->
+  <section id="skills" style="background: rgba(13, 18, 28, 0.4);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Practical tools, languages, and technologies utilized across academic projects, capstone implementation, and automation workflows.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-category-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="skill-cat-title">Programming</h3>
+            <span class="skill-cat-badge">Core</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-chip"><span class="skill-chip-dot"></span>Python</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>Java</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>JavaScript</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>PHP</div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category-card reveal delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="skill-cat-title">Web Development</h3>
+            <span class="skill-cat-badge">Frontend & Backend</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-chip"><span class="skill-chip-dot"></span>HTML</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>CSS</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>JavaScript</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>PHP</div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category-card reveal delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="skill-cat-title">Database</h3>
+            <span class="skill-cat-badge">Data Layer</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-chip"><span class="skill-chip-dot"></span>SQL</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>MySQL</div>
+          </div>
+        </div>
+
+        <!-- Automation & Integration (Highlighted) -->
+        <div class="skill-category-card highlight-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="color:var(--accent-cyan); border-color:rgba(56,189,248,0.4);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            </div>
+            <h3 class="skill-cat-title">Automation & Integration</h3>
+            <span class="skill-cat-badge" style="background:rgba(56,189,248,0.2);">Specialized</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-chip" style="border-color:rgba(56,189,248,0.3);"><span class="skill-chip-dot"></span>n8n</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>Workflow Automation</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>API Integration</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>Webhooks</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>System Integration</div>
+          </div>
+        </div>
+
+        <!-- Development & Infrastructure -->
+        <div class="skill-category-card reveal delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3 class="skill-cat-title">Dev & Infrastructure</h3>
+            <span class="skill-cat-badge">Environment</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-chip"><span class="skill-chip-dot"></span>Docker</div>
+            <div class="skill-chip"><span class="skill-chip-dot"></span>Ngrok</div>
+          </div>
+        </div>
+
+        <!-- Hardware / Integration -->
+        <div class="skill-category-card reveal delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="color:var(--accent-teal); border-color:rgba(45,212,191,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path></svg>
+            </div>
+            <h3 class="skill-cat-title">Hardware / Integration</h3>
+            <span class="skill-cat-badge" style="color:var(--accent-teal); background:rgba(45,212,191,0.1);">Physical Layer</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-chip" style="border-color:rgba(45,212,191,0.3);"><span class="skill-chip-dot" style="background-color:var(--accent-teal);"></span>RFID</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUCATION SECTION
+       ========================================================================== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Foundation</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic qualifications and core coursework in information systems and software development.</p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <div class="education-card reveal" style="padding: 36px; border: 1px solid var(--border-medium);">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:16px;">
+            <div>
+              <h3 style="font-size:1.5rem; color:#fff; margin-bottom:6px;">Calayan Educational Foundation Inc.</h3>
+              <div style="font-size:1.15rem; color:var(--accent-cyan); font-weight:600;">Bachelor of Science in Information Systems</div>
+            </div>
+            <div style="text-align:right;">
+              <span class="edu-tag honor" style="font-size:0.85rem; padding:6px 14px;">★ Consistent Dean's Lister</span>
+            </div>
+          </div>
+
+          <div class="edu-meta-row" style="margin-bottom:24px;">
+            <span class="edu-tag">4th Year Student</span>
+            <span class="edu-tag">Expected Graduation: 2027</span>
+            <span class="edu-tag">Lucena City, Quezon Province</span>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+            <div class="edu-coursework-title" style="font-size:0.8rem; margin-bottom:12px;">Core Information Systems Coursework</div>
+            <div class="course-tags" style="gap:10px;">
+              <span class="tech-badge accent" style="padding:6px 14px; font-size:0.85rem;">Database Management</span>
+              <span class="tech-badge accent" style="padding:6px 14px; font-size:0.85rem;">Systems Analysis and Design</span>
+              <span class="tech-badge accent" style="padding:6px 14px; font-size:0.85rem;">Web Development</span>
+              <span class="tech-badge accent" style="padding:6px 14px; font-size:0.85rem;">Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHY WORK WITH ME SECTION
+       ========================================================================== -->
+  <section id="why-me" style="background: rgba(13, 18, 28, 0.4);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Candidate Profile</span>
+        <h2 class="section-title">Student Developer with Hands-on Project Experience</h2>
+        <p class="section-subtitle">A realistic summary of my practical competencies, hands-on capabilities, and readiness to contribute to a technology team.</p>
+      </div>
+
+      <div class="why-me-grid">
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Practical Project Experience</h3>
+            <p>Hands-on experience building working systems rather than just theoretical exercises.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal delay-1">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Web Development Experience</h3>
+            <p>Building responsive frontends with HTML/CSS/JS and server-side backend logic with PHP.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal delay-2">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Database Development</h3>
+            <p>Designing structured relational tables, queries, and constraints in SQL and MySQL.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Workflow Automation & n8n</h3>
+            <p>Constructing automated event-driven workflows that eliminate manual operational steps.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal delay-1">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Social Media Platform Integration</h3>
+            <p>Integrating Facebook Messenger, Instagram, and webhooks into backend databases.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal delay-2">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </div>
+          <div class="strength-content">
+            <h3>API & Webhook Concepts</h3>
+            <p>Handling RESTful endpoints, webhook payloads, data parsing, and HTTP requests.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon" style="color:var(--accent-teal); border-color:rgba(45,212,191,0.3);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Hardware Integration (RFID)</h3>
+            <p>Bridging physical identification hardware into software databases and attendance logs.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal delay-1">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Systems Analysis & Design</h3>
+            <p>Analyzing problem domains, defining specifications, and diagramming architecture flows.</p>
+          </div>
+        </div>
+
+        <div class="strength-card reveal delay-2">
+          <div class="strength-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+          </div>
+          <div class="strength-content">
+            <h3>Problem Solving & Willingness to Learn</h3>
+            <p>Self-motivated to explore new frameworks, documentation, and technical toolsets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+          I am currently seeking an OJT/internship opportunity where I can apply my skills, gain professional experience, and contribute to real-world technology projects.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Info Card -->
+        <div class="contact-card-main reveal">
+          <h3 style="font-size:1.4rem; color:#fff; margin-bottom:8px;">Contact Information</h3>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">
+            Feel free to reach out directly via email, phone, or LinkedIn regarding OJT openings, technical interviews, or inquiries.
+          </p>
+
+          <div class="contact-info-list">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Email Address</div>
+                  <div class="contact-item-value mono">tempestrimuro123@gmail.com</div>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="tempestrimuro123@gmail.com" data-label="Email copied">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Phone Number</div>
+                  <div class="contact-item-value mono">0915 865 5349</div>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="0915 865 5349" data-label="Phone number copied">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <div class="contact-icon">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">LinkedIn Profile</div>
+                  <div class="contact-item-value" style="font-size:0.875rem;">linkedin.com/in/mark-wilson-de-torres-4ab278431</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/mark-wilson-de-torres-4ab278431" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                <span>Visit</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-actions-row">
+            <a href="mailto:tempestrimuro123@gmail.com" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email Me</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mark-wilson-de-torres-4ab278431" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- OJT Candidate Summary / Readiness -->
+        <div class="readiness-card reveal delay-1">
+          <div class="section-tag" style="margin-bottom:12px;">Candidate Summary</div>
+          <h3 class="readiness-title">Ready for Technology Internship & OJT</h3>
+          <p class="readiness-desc">
+            Equipped with practical experience building full-stack applications, relational database schemas, n8n automation pipelines, and hardware connections.
+          </p>
+
+          <div class="readiness-bullets">
+            <div class="readiness-bullet">
+              <svg class="bullet-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Proven Academic Excellence:</strong> Consistent Dean's Lister throughout BS Information Systems.</span>
+            </div>
+            <div class="readiness-bullet">
+              <svg class="bullet-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Practical Systems Mindset:</strong> Focus on bridging social media platforms, databases, and automated workflows.</span>
+            </div>
+            <div class="readiness-bullet">
+              <svg class="bullet-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Collaborative & Eager:</strong> Highly receptive to mentorship, code reviews, and industry engineering standards.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        Mark Wilson De Torres
+      </div>
+      <p class="footer-quote">
+        "Built with curiosity, systems thinking, and a passion for technology."
+      </p>
+      <div class="footer-copyright">
+        &copy; 2026 Mark Wilson De Torres • Bachelor of Science in Information Systems
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL (Dedicated Project Overlay)
+       ========================================================================== -->
+  <dialog id="projectModal" class="project-modal" closedby="any" aria-labelledby="modalTitle">
+    <div class="modal-scrollable">
+      <!-- Modal Header -->
+      <div class="modal-header-top">
+        <div>
+          <div id="modalCategory" class="modal-category-label"></div>
+          <h2 id="modalTitle" class="modal-title"></h2>
+          <p id="modalDesc" class="modal-short-desc"></p>
+        </div>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close project modal">✕</button>
+      </div>
+
+      <!-- System Screenshots Gallery -->
+      <div class="modal-gallery-section">
+        <div class="modal-section-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          <span>System Screenshots</span>
+        </div>
+
+        <!-- Featured Large Screenshot -->
+        <div id="modalFeaturedFrame" class="modal-featured-screenshot" title="Click to open fullscreen Lightbox">
+          <img id="modalFeaturedImg" src="" alt="Featured System Screenshot" class="modal-featured-img">
+          <div class="modal-screenshot-caption">
+            <span id="modalFeaturedCaption"></span>
+            <span style="font-size:0.75rem; color:var(--accent-cyan); display:flex; align-items:center; gap:4px;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span>Click to Enlarge</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Thumbnails of Additional Screenshots -->
+        <div id="modalThumbnails" class="modal-gallery-thumbnails"></div>
+      </div>
+
+      <!-- Collapsed Technical Details Accordion (Preserves rich info without cluttering) -->
+      <details id="modalDetailsSection" class="modal-details-accordion">
+        <summary>
+          <span>More About This Project</span>
+          <span class="accordion-arrow">▾</span>
+        </summary>
+        <div class="accordion-content">
+          <div class="accordion-block">
+            <div class="accordion-block-title">// Problem Statement</div>
+            <p id="modalProblem" class="accordion-text"></p>
+          </div>
+
+          <div class="accordion-block">
+            <div class="accordion-block-title">// System Workflow & Architecture</div>
+            <pre id="modalWorkflow" class="accordion-flow-diagram"></pre>
+          </div>
+
+          <div class="accordion-block">
+            <div class="accordion-block-title">// Key Implemented Functions</div>
+            <ul id="modalFunctions" class="accordion-text" style="padding-left:20px; display:flex; flex-direction:column; gap:6px;"></ul>
+          </div>
+
+          <div class="accordion-block">
+            <div class="accordion-block-title">// My Role & Contribution</div>
+            <p id="modalContribution" class="accordion-text"></p>
+          </div>
+        </div>
+      </details>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       FULLSCREEN LIGHTBOX MODAL
+       ========================================================================== -->
+  <dialog id="lightboxModal" class="lightbox-modal" closedby="any" aria-labelledby="lightboxScreenTitle">
+    <div class="lightbox-inner">
+      <div class="lightbox-header">
+        <div class="lightbox-meta">
+          <span id="lightboxProjectTitle" class="lightbox-project-name"></span>
+          <h3 id="lightboxScreenTitle" class="lightbox-screen-title"></h3>
+        </div>
+        <div class="lightbox-controls-group">
+          <span id="lightboxCounter" class="lightbox-counter"></span>
+          <button id="lightboxClose" class="lightbox-btn" aria-label="Close Lightbox viewer">✕</button>
+        </div>
+      </div>
+
+      <div class="lightbox-body">
+        <button id="lightboxPrev" class="lightbox-nav-arrow prev" aria-label="Previous screenshot">‹</button>
+        <img id="lightboxMainImg" class="lightbox-main-img" src="" alt="Screenshot">
+        <button id="lightboxNext" class="lightbox-nav-arrow next" aria-label="Next screenshot">›</button>
+      </div>
+
+      <div class="lightbox-footer-caption">
+        <span id="lightboxCaption"></span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Alert -->
+  <div id="toastNotice" class="toast-notice" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--accent-cyan)"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastMsg">Copied to clipboard</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
