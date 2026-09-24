@@ -113,24 +113,44 @@ const projectsData = {
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "n8n", "Docker", "Ngrok", "AI Agents"],
     screenshots: [
       {
-        src: "images/projects/daring-darling/dashboard.png",
-        caption: "Dashboard"
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215838.png",
+        caption: "Admin Dashboard & Analytics Overview",
+        explanation: "Centralized administrative dashboard displaying product metrics, registered customer volume, social channel sales breakdown, and real-time order conversion funnel."
       },
       {
-        src: "images/projects/daring-darling/inventory.png",
-        caption: "Inventory Management"
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215709.png",
+        caption: "Admin Authentication Portal",
+        explanation: "Secure administrator login portal for accessing the Daring Darling inventory, order fulfillment, and transaction management backend."
       },
       {
-        src: "images/projects/daring-darling/orders.png",
-        caption: "Order Management"
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215858.png",
+        caption: "Products & Inventory Management",
+        explanation: "Catalog management interface allowing administrators to add new thrift items, configure unit pricing and categories, and monitor live inventory status."
       },
       {
-        src: "images/projects/daring-darling/invoice.png",
-        caption: "Invoice"
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215907.png",
+        caption: "Customer Orders Management",
+        explanation: "Order creation and tracking workspace mapping incoming customer purchases directly to social media platform usernames and item product codes."
       },
       {
-        src: "images/projects/daring-darling/social-media.png",
-        caption: "Social Media Interaction"
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215917.png",
+        caption: "Invoice Generation & Billing",
+        explanation: "Automated billing module supporting batch and single invoice generation for pending customer orders across live selling channels."
+      },
+      {
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215928.png",
+        caption: "Payment Tracking & History",
+        explanation: "Financial record management interface tracking pending customer balances, payment statuses, and settled transaction histories."
+      },
+      {
+        src: "images/projects/daring-darling/Screenshot 2026-09-24 215944.png",
+        caption: "Reports & Sales Forecasting",
+        explanation: "Executive reporting screen with multi-channel revenue analytics, sales velocity charts, and category performance summaries."
+      },
+      {
+        src: "images/projects/daring-darling/capstone.jpg",
+        caption: "Social Media Automated Order & Hold",
+        explanation: "Customer-facing Facebook Messenger workflow that collects buyer shipping details and places items on temporary hold to prevent double-selling."
       }
     ],
     details: {
@@ -159,16 +179,29 @@ const projectsData = {
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "n8n", "Docker", "Ngrok"],
     screenshots: [
       {
-        src: "images/projects/facility-reservation/dashboard.png",
-        caption: "Reservation Management"
+        src: "images/projects/facility-reservation/Screenshot 2026-09-24 214852.png",
+        caption: "Staff & Admin Dashboard Overview",
+        explanation: "Central management dashboard for campus staff showing real-time statistics on total facilities, available spaces, daily reservations, and pending approval statuses."
       },
       {
-        src: "images/projects/facility-reservation/reservations.png",
-        caption: "Reservation Records"
+        src: "images/projects/facility-reservation/reservation.jpg",
+        caption: "Messenger Chatbot Reservation Assistant",
+        explanation: "Automated Facebook Messenger conversational bot offering trilingual support (English, Pure Tagalog, Taglish) and interactive facility browsing for students and faculty."
       },
       {
-        src: "images/projects/facility-reservation/messenger.png",
-        caption: "Messenger Interaction"
+        src: "images/projects/facility-reservation/Screenshot 2026-09-24 214916.png",
+        caption: "Walk-in Registration Interface",
+        explanation: "On-site booking form for staff to quickly register in-person facility reservation requests with attendee counts, time slots, and user contact info."
+      },
+      {
+        src: "images/projects/facility-reservation/Screenshot 2026-09-24 214931.png",
+        caption: "Facility Creation & Configuration",
+        explanation: "Administrative screen for configuring campus spaces, setting capacity limits, operating hours, hourly/daily rental rates, and advance booking rules."
+      },
+      {
+        src: "images/projects/facility-reservation/Screenshot 2026-09-24 214948.png",
+        caption: "All Reservations Management & CSV Export",
+        explanation: "Comprehensive reservation database with status filtering, date range search, walk-in creation triggers, and CSV data export capabilities."
       }
     ],
     details: {
@@ -194,19 +227,23 @@ const projectsData = {
     screenshots: [
       {
         src: "images/projects/gym-management/dashboard.png",
-        caption: "Dashboard"
+        caption: "Gym Management System Dashboard",
+        explanation: "Administrative overview showing key metrics including active member subscriptions, daily gym occupancy, and payment processing logs."
       },
       {
         src: "images/projects/gym-management/members.png",
-        caption: "Member Management"
+        caption: "Member Registration & Profiles",
+        explanation: "Member directory and profile management system tracking subscription tiers, contact details, and assigned RFID card IDs."
       },
       {
         src: "images/projects/gym-management/attendance.png",
-        caption: "RFID Attendance"
+        caption: "Real-Time Attendance & Access Logs",
+        explanation: "Live check-in and access tracking interface recording entry and exit timestamps powered by RFID reader integrations."
       },
       {
         src: "images/projects/gym-management/rfid.png",
-        caption: "Attendance Records"
+        caption: "RFID Hardware Integration",
+        explanation: "Hardware integration module syncing contactless RFID card scans directly with member database verification and status checks."
       }
     ],
     details: {
@@ -239,6 +276,7 @@ function initProjectModals() {
   const modalFeaturedFrame = document.getElementById('modalFeaturedFrame');
   const modalFeaturedImg = document.getElementById('modalFeaturedImg');
   const modalFeaturedCaption = document.getElementById('modalFeaturedCaption');
+  const modalFeaturedExplanation = document.getElementById('modalFeaturedExplanation');
   const modalThumbnails = document.getElementById('modalThumbnails');
   const modalDetailsSection = document.getElementById('modalDetailsSection');
   const modalProblem = document.getElementById('modalProblem');
@@ -261,14 +299,24 @@ function initProjectModals() {
     const featured = proj.screenshots[0];
     modalFeaturedImg.src = featured.src;
     modalFeaturedImg.alt = `${proj.title} - ${featured.caption}`;
-    modalFeaturedCaption.textContent = featured.caption;
+    if (modalFeaturedCaption) modalFeaturedCaption.textContent = featured.caption;
+    if (modalFeaturedExplanation) modalFeaturedExplanation.textContent = featured.explanation || '';
     modalFeaturedFrame.onclick = () => openLightboxViewer(proj.id, 0);
 
-    // Thumbnails / Additional Screenshots
+    // Thumbnails / Additional Screenshots with Title & 1-2 sentence explanation
     modalThumbnails.innerHTML = proj.screenshots.slice(1).map((s, idx) => `
-      <div class="modal-thumbnail-card" onclick="openLightboxViewer('${proj.id}', ${idx + 1})">
-        <img src="${s.src}" alt="${s.caption}" class="modal-thumbnail-img" loading="lazy">
-        <div class="modal-thumbnail-label">${s.caption}</div>
+      <div class="modal-thumbnail-card" onclick="openLightboxViewer('${proj.id}', ${idx + 1})" title="Click to enlarge in full resolution">
+        <div class="modal-thumbnail-img-wrap">
+          <img src="${s.src}" alt="${s.caption}" class="modal-thumbnail-img" loading="lazy">
+          <div class="thumbnail-hover-overlay">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span>Enlarge</span>
+          </div>
+        </div>
+        <div class="modal-thumbnail-body">
+          <div class="modal-thumbnail-label">${s.caption}</div>
+          <p class="modal-thumbnail-desc">${s.explanation || ''}</p>
+        </div>
       </div>
     `).join('');
 
@@ -346,7 +394,10 @@ function updateLightboxState() {
   projectTitle.textContent = proj.title;
   screenTitle.textContent = screen.caption;
   counter.textContent = `${lightboxIndex + 1} / ${proj.screenshots.length}`;
-  caption.textContent = `${screen.caption} — ${proj.title}`;
+  
+  if (caption) {
+    caption.innerHTML = `<strong>${screen.caption}</strong> — <span>${screen.explanation || ''}</span>`;
+  }
 
   mainImg.src = screen.src;
   mainImg.alt = `${proj.title} - ${screen.caption}`;
